@@ -1,0 +1,25 @@
+{
+  "name": "meals",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "dev": "nodemon --verbose ./src/bin/www"
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
+  "dependencies": {
+    "@types/redis": "^2.8.6",
+    "bluebird": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.3",
+    "nexmo": "^2.3.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.53",
+    "nodemon": "^1.11.0"
+  }
+}
