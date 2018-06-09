@@ -1,26 +1,47 @@
 
 
-# Nexmo Node.js Smaple App
+# Redis Node.js Smaple App
 
 ## How to Start
-1. Create free accpund on redislabs
+1. Create free account on redislabs
 2. Add needed credentials in config in .env file
 
 
-## Send SMS Message API Example 
+## API Examples 
 
-POST http://localhost:3000/api/sms
+1. POST http://localhost:3000/api/keyVal
 
 {
-	"sender": "Nexmo",
-	"recipient": "+201111060612",
-	"message": "This is a message"
+	"key": "name",
+	"val": "aa"
 }
 
-## Notice
-
-No bulk messaging is available for Nexmo
+2. GET http://localhost:3000/api/keyVal/fd
 
 
-xASjKQ8reMCdyXxPqLIXKZHwh0I6cTgX
-redis-13343.c14.us-east-1-2.ec2.cloud.redislabs.com:13343
+
+3. POST http://localhost:3000/api/hashField
+
+{
+	"key": "g",
+	"field": "name",
+	"val": "Ahmed"
+}
+
+4. GET http://localhost:3000/api/hash/g/name
+
+
+
+
+5. POST http://localhost:3000/api/hash
+
+{
+	"key": "someRan",
+	"obj": {
+		"name": "AbdelHady",
+		"address": "Nasr City",
+		"age": "40"
+	}
+}
+
+6. GET http://localhost:3000/api/hash/someRan
