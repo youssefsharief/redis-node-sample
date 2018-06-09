@@ -11,7 +11,7 @@
 
 1. POST http://localhost:3000/api/keyVal
 
-{
+>>>{
 	"key": "name",
 	"val": "aa"
 }
@@ -22,7 +22,7 @@
 
 3. POST http://localhost:3000/api/hashField
 
-{
+>>>{
 	"key": "g",
 	"field": "name",
 	"val": "Ahmed"
@@ -33,9 +33,8 @@
 
 
 
-5. POST http://localhost:3000/api/hash
-
-{
+5. POST http://localhost:3000/api/hash 
+>>>{
 	"key": "someRan",
 	"obj": {
 		"name": "AbdelHady",
